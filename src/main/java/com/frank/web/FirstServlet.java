@@ -20,6 +20,7 @@ public class FirstServlet extends HttpServlet {
 
         String userage = request.getParameter("userage");
         System.out.println(userage);
+        request.getRequestDispatcher("/index.jsp").forward(request,response);
     }
 
     @Override
